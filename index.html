@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function func(){
+            var k=document.getElementById("tet").value;
+            if(k=='STEAL20')
+            {
+                var t=1499-(299.8);
+                document.getElementById("mrp").innerHTML=t;
+                var u="Coupon Applied";
+                document.getElementById("ms").innerHTML=" "+u;
+            }
+            else{
+                document.getElementById("mrp").innerHTML="1499";
+                var y="Invalid Coupon";
+                document.getElementById("ms").innerHTML=" "+y;
+            }
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top{
+            width: 100%;
+            height: 100vh;
+            background:linear-gradient(155deg,blue,#fff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo{
+            height: 20%;
+            width: 20%;
+            margin-bottom: 20px;
+            border-radius: 50%;
+        }
+        .middle{
+            background:white;
+            color:black;
+            text-align: center;
+            padding: 40px 0px;
+            border-radius: 20px;
+        }
+        .bottom{
+            display: flex;
+            align-items: center;
+            margin:25px auto;
+            width: fit-content;
+        }
+        #tet{
+            border:1px dashed black;
+            padding: 10px 20px;
+            background:white;
+        }
+        #ap{
+            border: 1px solid black;
+            background: black;
+            color:white;
+            cursor: pointer;
+            padding: 10px 28px;
+        }
+        .cost{
+            display: flex;
+            align-items: center;
+            margin:20px auto;
+            width: fit-content;
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="middle">
+            <img src="https://yt3.ggpht.com/ytc/AKedOLQJz__sT-xY4jWPYrXbHow7kbrAdyOR41t3ajVh=s900-c-k-c0x00ffffff-no-rj" class="logo">
+            <h3>Apply Coupon Here</h3>
+            <div class="bottom">
+                <input type="text" id="tet">
+                &nbsp;&nbsp;<input type="button" id="ap" onclick="func()" value="Apply"> </input>
+            </div>
+            <div class="cost">MRP:<span id="mrp">1499</span></div>
+            <u><h4 id="ms">Enter Valid Coupon</h4></u>
+        </div>
+    </div>
+</body>
+</html>
