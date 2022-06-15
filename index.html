@@ -11,6 +11,20 @@
                 var u="Coupon Applied";
                 document.getElementById("ms").innerHTML=" "+u;
             }
+            else if(k=='STEAL15')
+            {
+                var t=1499-(224.85);
+                document.getElementById("mrp").innerHTML=t;
+                var u="Coupon Applied";
+                document.getElementById("ms").innerHTML=" "+u;
+            }
+            else if(k=='STEAL35')
+            {
+                var t=1499-(524.65);
+                document.getElementById("mrp").innerHTML=t;
+                var u="Coupon Applied";
+                document.getElementById("ms").innerHTML=" "+u;
+            }
             else{
                 document.getElementById("mrp").innerHTML="1499";
                 var y="Invalid Coupon";
@@ -54,6 +68,7 @@
             border:1px dashed black;
             padding: 10px 20px;
             background:white;
+            outline: none;
         }
         #ap{
             border: 1px solid black;
